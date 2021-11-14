@@ -1,0 +1,247 @@
+
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni
+s pribyvajici sirkou pridavame media query pro
+středně široké obrazovky:
+@media (min-width: 480px) {
+}
+široké obrazovky
+@media (min-width: 860px) {
+}
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paticka {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+.paticka a {
+    color: silver;
+}
+
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+
+/*Nastavení pro mobil*/
+
+/*Nastavení písma, obrázků*/
+
+
+.hlavni_recept
+    {   
+        min-height: 200px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("images/burger.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: solid whitesmoke 1px;
+        
+    }
+
+.maly_recept_2
+    {   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("images/sushi.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: solid whitesmoke 1px;
+
+}
+
+.maly_recept_3
+    {   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("images/rajcata.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: solid whitesmoke 1px;
+}
+
+.maly_recept_4
+    {   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("images/kure.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: solid whitesmoke 1px;
+}
+
+.maly_recept_5
+    {   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("images/grilovani.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: solid whitesmoke 1px;
+}
+
+
+/*Nastavení písma, obrázků*/
+
+.jidlo_1
+    {   
+        font-weight: 800;
+        font-size: 1.75rem;
+        color:white;
+        padding: 0.5rem;
+    }
+
+.recept
+    {   
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-family: source sans pro, sans-serif;
+        color:white;
+        padding: 0.5rem;
+    }
+
+.jidlo
+    {   
+        font-weight: 800;
+        font-size: 1.2rem;
+        font-family: raleway, sans-serif;
+        color: white;
+        padding: 0.5rem;
+    }
+
+/*Nastavení border boxů a pozicování*/
+
+.kontejner
+    {  
+        box-sizing: border-box;
+    }
+
+.recept 
+    {   
+        display: flex; 
+        justify-content: space-between;
+    }
+
+.paticka
+    {   
+        display: none;
+    }
+
+/*Nastavení border boxů a pozicování pro tablet*/
+
+@media (min-width: 480px) {
+.kontejner    
+    {   
+        padding: 1.25rem;
+    }    
+
+.jidlo_1
+    {   
+        font-size: 2rem;
+    }    
+.jidlo
+    {   
+        font-size: 1.5rem;
+    }
+.hlavni_recept
+    {   
+        min-height: 250px;
+    }
+
+.recepty
+    {    
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 150px;
+    }   
+
+.maly_recept_2
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_3
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_4
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_5
+    {   
+        flex-basis: 50%;
+    }
+}
+
+
+/*Nastavení border boxů a pozicování pro PC*/
+@media (min-width: 860px) {
+.kontejner    
+    {   
+        padding: 1.25rem;
+        display: flex;
+    }
+
+.jidlo_1
+    {   
+        font-size: 3rem;
+    }    
+.jidlo
+    {   
+        font-size: 1.75rem;
+    }
+.hlavni_recept
+    {   
+        min-height: 400px;
+    }
+.recepty
+{  
+    min-height: 200px;
+}
+
+.maly_recept_2
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_3
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_4
+    {   
+        flex-basis: 50%;
+    }
+
+.maly_recept_5
+    {   
+        flex-basis: 50%;
+    }
+
+}
+
+
+
+
+
+
